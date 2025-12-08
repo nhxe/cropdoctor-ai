@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cropdoctor
+    username: postgres
+    password: yourpassword
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+app:
+  jwt-secret: your-super-secret-256-bit-key-here
+  s3-bucket: your-bucket-name
